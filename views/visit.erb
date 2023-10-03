@@ -4,11 +4,11 @@
 <form action="/visit" method="POST">
   <div class="mb-3">
     <label>Ваше имя</label>
-    <input id="aaa" name="client[name]" type="text" class="form-control" placeholder="Введите имя" value="">
+    <input id="aaa" name="client[name]" type="text" class="form-control" placeholder="Введите имя" value="<%= @c.name %>">
   </div>
   <div class="mb-3">
     <label>Ваш телефон</label>
-    <input id="bbb" name="client[phone]" type="text" class="form-control" placeholder="Введите телефон" value="">
+    <input id="bbb" name="client[phone]" type="text" class="form-control" placeholder="Введите телефон" value="<%= @c.phone %>">
   </div>
 </br> 
 
@@ -16,7 +16,7 @@
 
 <div class="mb-3">
     <label>Дата и время</label>
-    <input id="datetimepicker" name="client[datestamp]" type="text" class="form-control ccc" placeholder="Выберите дату и время" value="">
+    <input id="datetimepicker" name="client[datestamp]" type="text" class="form-control ccc" placeholder="Выберите дату и время" value="<%= @c.datestamp %>">
   </div>
  </br> 
 <div class="mb-3">
