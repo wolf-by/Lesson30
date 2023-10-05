@@ -12,6 +12,12 @@
   </div>
 </br> 
 
+<select name="barber" type="text" class="form-select" aria-label="Default select example">
+  <option selected>Выберите парикмахера</option>
+  <option <%= @barber == 'Walter White' ? 'selected' : '' %>>Walter White</option>
+  <option <%= @barber == 'Jessie Pinkman' ? 'selected' : '' %>>Jessie Pinkman</option>
+  <option <%= @barber == 'Gus Fring' ? 'selected' : '' %>>Gus Fring</option>
+</select>
 
 
 <div class="mb-3">
