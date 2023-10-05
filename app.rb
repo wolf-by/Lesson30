@@ -80,6 +80,11 @@ get '/barber/:id' do
 end
 
 get '/list' do 
-	@clients = Client.all
+	@clients = Client.order('created_at DESC')
 	erb :list
-end 
+end
+
+get '/client/:id' do
+	@client = Client.find(params[:id])
+	erb :client
+end
