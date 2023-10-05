@@ -73,3 +73,7 @@ post '/contacts' do
 
 	erb "Данные отправлены" 
 end
+
+get '/barber/:id' do
+	erb :barber
+end 
